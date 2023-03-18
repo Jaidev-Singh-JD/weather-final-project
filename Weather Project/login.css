@@ -14,6 +14,7 @@ body{
 #navbar {
     height: 80px;
     width: 100%;
+    border: 1px rgba(255, 239, 199, 0.921) solid;
     /* background-color:#555; */
 }
 

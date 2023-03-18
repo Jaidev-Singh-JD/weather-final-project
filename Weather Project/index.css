@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stick+No+Bills:wght@800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-/* body {
-    font-family: 'Times New Roman', Times, serif;
-} */
+body {
+    background-image:linear-gradient(rgba(255, 239, 199, 0.921),rgba(0, 0, 0, 0.6)),url(background.jpg);
+    background-size: 1520px 900px;
+    background-repeat: no-repeat;
+}
 
 #navbar {
     height: 80px;
     width: 100%;
-    /* background-color:#555; */
+    border: 1px rgba(255, 239, 199, 0.921) solid;
+    box-shadow: 0px 0px 5px 3px;
 }
 
 label.heading {
-    color:black;
+    color: black;
     font-size: 50px;
     line-height: 80px;
     padding: 0 40px;
@@ -24,7 +30,7 @@ label.heading {
     font-family: 'Stick No Bills', sans-serif;
 }
 
-.fa-solid{
+.fa-solid {
     color: #f59709;
 }
 
@@ -70,23 +76,21 @@ label.heading {
 
 /*Display Container */
 .container {
-
-    border: 1px solid black;
-    border-radius: 25px;
-    width: 350px;
-    height: 400px;
+    display: grid;
+    height: 500px;
     align-items: center;
     text-align: center;
-    margin: 80px auto;
-    padding: 15px;
-    background: linear-gradient(rgb(179, 165, 235), rgb(133, 211, 250));
+    margin: 8px auto;
+    padding: 10px;
+    -webkit-text-fill-color: #fff;
+
 }
 
 
 /*search bar css*/
 .search-box {
     width: 400px;
-    height: 35px;
+    height: 38px;
     background: #fff;
     margin: 20px 10px 0;
     border-radius: 5px;
@@ -144,10 +148,99 @@ button .fa-solid {
 .suggestion-box {
     background-color: #c2d2de;
     border-radius: 5px;
-    max-height: 220px;
+    max-height: 130px;
     overflow: hidden;
 
 }
-.inv{
+
+.inv {
     visibility: hidden;
+}
+
+.sun {
+    background-image: linear-gradient(rgba(242, 255, 0, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.cloud-bolt {
+    background-image: linear-gradient(rgba(57, 57, 49, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.snowflake {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.smog {
+    background-image: linear-gradient(rgb(138, 138, 138), rgba(0, 0, 0, 0.6)), url(gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cloud {
+    background-image: linear-gradient(rgba(0, 4, 255, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.rain {
+    background-image: linear-gradient(rgba(0, 242, 255, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation-direction: alternate-reverse;
+}
+
+#img {
+    font-size: 250px;
+    margin-right: 10px;
+    -webkit-text-fill-color: #fff;
+}
+
+#temp {
+    font-size: 150px;
+    float: left;
+    margin-top: -48px;
+    font-weight: bold;
+    text-shadow: 0pc 0pc 1pc;
+
+
+}
+
+
+#city {
+    font-size: 25px;
+    float: left;
+    margin-top: -160px;
+    text-shadow: 0pc 0pc 1pc;
+}
+#weathercondition {
+    font-size: 25px;
+    float: left;
+    margin-top: -80px;
+    text-shadow: 0pc 0pc 1pc;
+}
+#country {
+    font-size: 25px;
+    float: left;
+    margin-top: -120px;
+    text-shadow: 0pc 0pc 1pc;
+
+}
+#feels_like {
+    font-size: 25px;
+    float: left;
+    margin-top: -40px;
+    text-shadow: 0pc 0pc 1pc;
+
+}
+#humidity {
+    font-size: 25px;
+    float: left;
+    margin-top:0px;
+    text-shadow: 0pc 0pc 1pc;
 }

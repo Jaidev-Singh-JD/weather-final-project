@@ -17,6 +17,8 @@ window.addEventListener("DOMContentLoaded", () => {
     let icon = document.querySelector("#img")
     let btn = document.querySelector("#mag")
     let suggest_click = document.querySelector(".suggestion-box")
+    let container = document.querySelector(".container")
+
 
 
     let api;
@@ -66,14 +68,16 @@ window.addEventListener("DOMContentLoaded", () => {
             requestApi(search.value)
             suggest_click.innerHTML=" "       
         }
-    })
+    });
     //btn click 
     btn.addEventListener("click", () => {
         // console.log("clicked")
         if (search.value !== "") {
             requestApi(search.value)
+            suggest_click.innerHTML=" "  
         }
     });
+    
 
 
     function requestApi(city) {
@@ -110,16 +114,52 @@ window.addEventListener("DOMContentLoaded", () => {
 
             if (data.weather[0].id == 800) {
                 icon.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+                container.classList.add("sun")
+                container.classList.remove("cloud-bolt")
+                container.classList.remove("snowflake")
+                container.classList.remove("smog")
+                container.classList.remove("cloud")
+                container.classList.remove("rain")
             } else if (data.weather[0].id >= 200 && data.weather[0].id <= 232) {
                 icon.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`;
+                container.classList.add("cloud-bolt")
+                container.classList.remove("sun")
+                container.classList.remove("snowflake")
+                container.classList.remove("smog")
+                container.classList.remove("cloud")
+                container.classList.remove("rain")
             } else if (data.weather[0].id >= 600 && data.weather[0].id <= 622) {
                 icon.innerHTML = `<i class="fa-solid fa-snowflake"></i>`;
+                container.classList.add("snowflake")
+                container.classList.remove("sun")
+                container.classList.remove("cloud-bolt")
+                container.classList.remove("smog")
+                container.classList.remove("cloud")
+                container.classList.remove("rain")
             } else if (data.weather[0].id >= 701 && data.weather[0].id <= 781) {
                 icon.innerHTML = `<i class="fa-solid fa-smog"></i>`;
+                container.classList.add("smog")
+                container.classList.remove("sun")
+                container.classList.remove("cloud-bolt")
+                container.classList.remove("snowflake")
+                container.classList.remove("cloud")
+                container.classList.remove("rain")
             } else if (data.weather[0].id >= 801 && data.weather[0].id <= 804) {
                 icon.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
+                container.classList.add("cloud")
+                container.classList.remove("sun")
+                container.classList.remove("cloud-bolt")
+                container.classList.remove("snowflake")
+                container.classList.remove("smog")
+                container.classList.remove("rain")
             } else if ((data.weather[0].id >= 500 && data.weather[0].id <= 531) || (data.weather[0].id >= 300 && data.weather[0].id <= 321)) {
                 icon.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`;
+                container.classList.add("rain")
+                container.classList.remove("sun")
+                container.classList.remove("cloud-bolt")
+                container.classList.remove("snowflake")
+                container.classList.remove("smog")
+                container.classList.remove("cloud")
             }
             infoText.innerHTML = ""
             search.value =""
