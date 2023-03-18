@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stick+No+Bills:wght@800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-image:linear-gradient(rgba(255, 239, 199, 0.921),rgba(0, 0, 0, 0.6)),url(background.jpg);
+    background-size: 1520px 900px;
+    background-repeat: no-repeat;
+}
+#navbar {
+    height: 80px;
+    width: 100%;
+    border: 1px rgba(255, 239, 199, 0.921) solid;
+    /* background-color:#555; */
+}
+
+label.heading {
+    color:black;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: bold;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.fa-solid{
+    color: #f59709;
+}
+input {
+    font-size: 15px;
+}
+
+#content,#contents {
+    color: red;
+}
+
+.inv {
+    display: none;
+    visibility: hidden;
+}
+.container {
+    display: grid;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    margin: 70px auto;
+    padding: 15px;
+    box-shadow: 0px 1px 5px 3px ;
+}
+.input-row1,
+.input-row2{
+    border: 2px solid;
+    width: 350px;
+    height: 40px;
+    background-color: #ffffff;
+    margin: 20px 10px ;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px;
+    
+}
+#user,
+#password{
+    
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.fa-user,
+.fa-lock{
+    margin-right:100px;
+    margin-top: 10px;
+}
+#lbtn,
+#lbtnsignup {
+    border: 2px solid;
+    width: 350px;
+    height: 40px;
+    background-color:#f59709;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-text-fill-color: #ffffff;
+    margin: 20px 10px ;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px;
+
+}
+
+#lbtn:hover {
+    background-color:#ffffff;
+    -webkit-text-fill-color: #f59709;
+}
+#signuphere:hover{
+    color: #f59709;
+}
+#signuphere{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#passwordsignup,
+#usersignup{
+    border: none;
+    outline: none;
+    font-weight: bold;
+}

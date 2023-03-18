@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/5a608c6ca1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+
+    <nav id="navbar">
+        <label class="heading"> <i class="fa-solid fa-sun"></i> Weather One </label>
+        <!-- <div><input id="search" type="text" placeholder="Search for location"></div>
+            <div>
+                <i id="mag" class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
+        <div id="navcontent">
+            <div class="search-box">
+                <div class="search-row">
+                    <input type="text" id="search" placeholder="Search for city or place... " autocomplete="off">
+                    <button id="mag"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="suggestion-box">
+                    <!-- <ul>
+                        <li>Delhi</li>
+                        <li>Mumbai</li>
+                        <li>Kolkata</li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="navicon">
+            <div id="currentlocation">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div class="tooltiptext">Know your Location</div>
+            </div>
+            <div id="login">
+                <i class="fa-solid fa-sign-in" aria-hidden="true"></i>
+                <div class="tooltiptext">Sign up</div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+
+        <section id="weatherDetails">
+
+            <div id="temp"></div>
+            <div id="infoText"></div>
+            <div id="img"></div>
+            <div id="city"></div>
+            <div id="country"></div>
+            <div id="weathercondition"></div>
+            <div id="feels_like"></div>
+            <div id="humidity"></div>
+
+        </section>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="autosuggestions.js"></script>
+
+</body>
+
+</html>
