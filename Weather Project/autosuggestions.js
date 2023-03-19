@@ -9,7 +9,9 @@ let suggestedkeywords=[
     'Denver',
     'Darjeeling',
     'Doha',
-    'Denmark'
+    'Denmark',
+    'Mawsynram',
+    'Russia',
 
 ];
 

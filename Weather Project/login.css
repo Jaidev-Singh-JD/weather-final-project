@@ -8,11 +8,11 @@
 }
 body{
     background-image:linear-gradient(rgba(255, 239, 199, 0.921),rgba(0, 0, 0, 0.6)),url(background.jpg);
-    background-size: 1520px 900px;
+    background-size: 1370px 900px;
     background-repeat: no-repeat;
 }
 #navbar {
-    height: 80px;
+    height: 70px;
     width: 100%;
     border: 1px rgba(255, 239, 199, 0.921) solid;
     box-shadow: 0px 0px 5px 3px;
@@ -20,9 +20,9 @@ body{
 
 label.heading {
     color:black;
-    font-size: 50px;
-    line-height: 80px;
-    padding: 0 40px;
+    font-size: 45px;
+    line-height: 75px;
+    padding: 0 70px;
     font-weight: bold;
     font-family: 'Stick No Bills', sans-serif;
 }
@@ -47,7 +47,7 @@ input {
     border: 2px solid black;
     border-radius: 25px;
     width: 400px;
-    height: 500px;
+    height: 430px;
     align-items: center;
     text-align: center;
     margin: 70px auto;
@@ -111,4 +111,12 @@ input {
     border: none;
     outline: none;
     font-weight: bold;
+}
+#backtologin:hover{
+    color: #f59709;
+    cursor: pointer;
+}
+#backtologin{
+    color: #ffffff;
+    text-decoration: underline;
 }

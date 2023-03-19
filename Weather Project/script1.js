@@ -19,7 +19,7 @@ class Logic {
 
 window.addEventListener("DOMContentLoaded", () => {
     console.log("loaded")
-    logic = new Logic()
+    let logic = new Logic()
 
 
     let signuppage = document.getElementById("signuppage")
@@ -31,7 +31,12 @@ window.addEventListener("DOMContentLoaded", () => {
     signuphere.addEventListener("click", () => {
         signuppage.classList.remove("inv")
         loginpage.classList.add("inv")
-    })
+    });
+    let backtologin = document.getElementById("backtologin")
+    backtologin.addEventListener("click", () => {
+        signuppage.classList.add("inv")
+        loginpage.classList.remove("inv")
+    });
 
 
 
@@ -57,7 +62,7 @@ window.addEventListener("DOMContentLoaded", () => {
             document.getElementById('content').innerHTML = "Invalid User ID and Password"
             return
         }
-    })
+    });
 
 
 
@@ -90,9 +95,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-    })
+    });
 
 
 
 
-})
+});
