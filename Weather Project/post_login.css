@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stick+No+Bills:wght@800&display=swap');
-
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
 body {
     background-image:linear-gradient(rgba(255, 239, 199, 0.921),rgba(0, 0, 0, 0.6)),url(background.jpg);
     background-size: 1520px 900px;
     background-repeat: no-repeat;
 }
-
 #navbar {
     height: 80px;
     width: 100%;
     border: 1px rgba(255, 239, 199, 0.921) solid;
     box-shadow: 0px 0px 5px 3px;
 }
-
 label.heading {
     color: black;
     font-size: 50px;
@@ -63,32 +59,13 @@ label.heading {
     box-shadow: 0px 1px 1px 0px;
 }
 
-#login:hover .tooltiptext {
+#logout:hover .tooltiptext {
     visibility: visible;
 }
 
 #currentlocation:hover .tooltiptext {
     visibility: visible;
 }
-
-
-
-
-/*Display Container */
-.container {
-    display: grid;
-    height: 500px;
-    width: 1500px;
-    align-items: center;
-    text-align: center;
-    margin: 30px auto;
-    padding: 10px;
-    -webkit-text-fill-color: #fff;
-
-}
-
-
-/*search bar css*/
 .search-box {
     width: 400px;
     height: 38px;
@@ -155,95 +132,126 @@ button .fa-solid {
     -webkit-text-fill-color: #fff;
 
 }
-
 .inv {
     visibility: hidden;
 }
-
-.sun {
-    background-image: linear-gradient(rgba(200, 210, 3, 0.958), rgba(0, 0, 0, 0.6)), url(gif.gif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.cloud-bolt {
-    background-image: linear-gradient(rgba(90, 90, 90, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.snowflake {
-    background-image: linear-gradient(rgba(146, 211, 231, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.smog {
-    background-image: linear-gradient(rgb(96, 91, 91), rgba(0, 0, 0, 0.9)), url(gif.gif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.cloud {
-    background-image: linear-gradient(rgba(9, 63, 197, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.rain {
-    background-image: linear-gradient(rgba(236, 236, 236, 0.921), rgba(0, 0, 0, 0.6)), url(gif.gif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation-direction: alternate-reverse;
-}
-
-#img {
-    font-size: 250px;
-    margin-right: 10px;
+.container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
     -webkit-text-fill-color: #fff;
-    text-shadow: 1pc 1pc 1pc;
-}
-
-#temp {
-    font-size: 150px;
-    float: left;
-    margin-top: -48px;
-    font-weight: bold;
-    text-shadow: 0pc 0pc 1pc;
-
 
 }
 
 
-#city {
-    font-size: 25px;
-    float: left;
-    margin-top: -160px;
-    text-shadow: 0pc 0pc 1pc;
-}
-#weathercondition {
-    font-size: 25px;
-    float: left;
-    margin-top: -80px;
-    text-shadow: 0pc 0pc 1pc;
-}
-#country {
-    font-size: 25px;
-    float: left;
-    margin-top: -120px;
-    text-shadow: 0pc 0pc 1pc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    width: 350px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px;
+    background: linear-gradient(rgb(179, 165, 235), rgb(133, 211, 250));
 
 }
-#feels_like {
-    font-size: 25px;
-    float: left;
-    margin-top: -40px;
-    text-shadow: 0pc 0pc 1pc;
+.container1{
+    border-radius: 25px;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    background: linear-gradient(rgb(179, 165, 235), rgb(133, 211, 250));
 
 }
-#humidity {
-    font-size: 25px;
-    float: left;
-    margin-top:0px;
-    text-shadow: 0pc 0pc 1pc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+#all,#all1{
+    display: flex;
+    /* justify-content: space-evenly; */
 }
+
+
+
+

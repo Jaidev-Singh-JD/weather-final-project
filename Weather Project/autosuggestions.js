@@ -38,5 +38,5 @@ function display(suggest){
 }
 function selectInput(list){
     inputBox.value=list.innerHTML;
-    suggestionBox.innerHtml='';
+    suggestionBox.innerHTML='';
 }

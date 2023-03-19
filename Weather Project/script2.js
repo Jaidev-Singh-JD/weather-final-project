@@ -85,18 +85,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-    // for search bar dynamics
-    let search = document.getElementById("search")
-    search.classList.add("inv")
-    let mag = document.getElementById("mag")
-    mag.addEventListener("click", () => {
-        search.classList.remove("inv")
-    })
+    // // for search bar dynamics
+    // let search = document.getElementById("search")
+    // search.classList.add("inv")
+    // let mag = document.getElementById("mag")
+    // mag.addEventListener("click", () => {
+    //     search.classList.remove("inv")
+    // })
 
 
 
 
-    let currentloc = document.getElementById("currentloc")
+    let currentloc = document.getElementById("currentlocation")
     currentloc.addEventListener("click", () => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(success, error)
@@ -125,13 +125,23 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-
+    //enter click 
+    let suggest_click = document.querySelector(".suggestion-box")
     search.addEventListener("keyup", e => {
         if (e.key == "Enter" && search.value !== "") {
             requestApi(search.value)
+            suggest_click.innerHTML = " "
         }
-    })
+    });
+    //btn click 
+    let btn = document.getElementById("mag")
+    btn.addEventListener("click", () => {
+        // console.log("clicked")
+        if (search.value !== "") {
+            requestApi(search.value)
+            suggest_click.innerHTML = " "
+        }
+    });
 
 
     function requestApi(city) {
@@ -341,19 +351,19 @@ window.addEventListener("DOMContentLoaded", () => {
                 icon7.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`;
             }
 
-            let time3 = new Date(data1.list[8].dt*1000)
+            let time3 = new Date(data1.list[8].dt * 1000)
             let day3 = time3.toDateString().split(" ")[0]
 
-            let time4 = new Date(data1.list[16].dt*1000)
+            let time4 = new Date(data1.list[16].dt * 1000)
             let day4 = time4.toDateString().split(" ")[0]
 
-            let time5 = new Date(data1.list[21].dt*1000)
+            let time5 = new Date(data1.list[21].dt * 1000)
             let day5 = time5.toDateString().split(" ")[0]
 
-            let time6 = new Date(data1.list[30].dt*1000)
+            let time6 = new Date(data1.list[30].dt * 1000)
             let day6 = time6.toDateString().split(" ")[0]
 
-            let time7 = new Date(data1.list[38].dt*1000)
+            let time7 = new Date(data1.list[38].dt * 1000)
             let day7 = time7.toDateString().split(" ")[0]
 
 
@@ -366,7 +376,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
             // hourly Data
-            
+
             tempt1.innerHTML = `${Math.floor(data1.list[0].main.temp)} &#8451`
             weatherconditiont1.innerHTML = data1.list[0].weather[0].description
 
