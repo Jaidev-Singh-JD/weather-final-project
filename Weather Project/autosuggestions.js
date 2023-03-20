@@ -12,6 +12,8 @@ let suggestedkeywords=[
     'Denmark',
     'Mawsynram',
     'Russia',
+    'leh',
+    'pune'
 
 ];
 

@@ -11,28 +11,28 @@
 </head>
 
 <body>
-    </nav>
+
     <nav id="navbar">
         <label class="heading"> <i class="fa-solid fa-sun"></i> Weather One </label>
         <div id="navcontent">
             <div class="search-box">
                 <div class="search-row">
-                    <input type="text" id="search" placeholder="Search for city or place... " autocomplete="off" >
+                    <input type="text" id="search" placeholder="Search for city or place... " autocomplete="off">
                     <button id="mag"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                 <div class="suggestion-box">
                 </div>
             </div>
             <div class="navicon">
-            <div id="currentlocation">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <div class="tooltiptext">Know your Location</div>
+                <div id="currentlocation">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div class="tooltiptext">Know your Location</div>
+                </div>
+                <div id="logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <div class="tooltiptext">Sign out</div>
+                </div>
             </div>
-            <div id="logout">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                <div class="tooltiptext">Sign out</div>
-            </div>
-        </div>
         </div>
     </nav>
 
@@ -58,7 +58,6 @@
         <div class="container">
 
             <section id="weatherDetails1">
-
                 <div id="infoText1"></div>
                 <div id="day1"></div>
                 <div id="img1"></div>
@@ -92,12 +91,13 @@
 
 
 
-
+    <h2><span>Hourly Weather Data</span></h2>
     <div id="all1">
 
         <div class="container1">
+
             <div id="hour1"></div>
-            <div id="imgt1" ></div>
+            <div id="imgt1"></div>
             <div id="tempt1"></div>
             <div id="weatherconditiont1"></div>
 
@@ -134,51 +134,37 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="all1">
-
-        <div class="container1">
+    <h2><span>5-day Weather Forcast</span></h2>
+    <div id="all2">
+        <div class="container2">
             <div id="day3"></div>
-            <div id="img3" >
-                <!-- <img id="img3" src="http://openweathermap.org/img/wn/10d@2x.png" alt=""> -->
-            </div>
+            <div id="img3"></div>
             <div id="temp3"></div>
             <div id="weathercondition3"></div>
 
         </div>
-        <div class="container1">
+        <div class="container2">
             <div id="day4"></div>
             <div id="img4"></div>
             <div id="temp4"></div>
             <div id="weathercondition4"></div>
 
         </div>
-        <div class="container1">
+        <div class="container2">
             <div id="day5"></div>
             <div id="img5"></div>
             <div id="temp5"></div>
             <div id="weathercondition5"></div>
 
         </div>
-        <div class="container1">
+        <div class="container2">
             <div id="day6"></div>
             <div id="img6"></div>
             <div id="temp6"></div>
             <div id="weathercondition6"></div>
 
         </div>
-        <div class="container1">
+        <div class="container2">
             <div id="day7"></div>
             <div id="img7"></div>
             <div id="temp7"></div>

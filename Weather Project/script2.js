@@ -81,6 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let api;
     let api1;
+    let all = document.getElementById("all")
 
 
 
@@ -125,7 +126,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    //enter click 
+    //enter click
     let suggest_click = document.querySelector(".suggestion-box")
     search.addEventListener("keyup", e => {
         if (e.key == "Enter" && search.value !== "") {
@@ -207,26 +208,63 @@ window.addEventListener("DOMContentLoaded", () => {
                 icon.innerHTML = `<i class="fa-solid fa-sun"></i>`;
                 icon1.innerHTML = `<i class="fa-solid fa-sun"></i>`;
                 icon2.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+                all.classList.add("sun")
+                all.classList.remove("cloud-bolt")
+                all.classList.remove("snowflake")
+                all.classList.remove("smog")
+                all.classList.remove("cloud")
+                all.classList.remove("rain")
             } else if (data.weather[0].id >= 200 && data.weather[0].id <= 232) {
                 icon.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`;
                 icon1.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`;
                 icon2.innerHTML = `<i class="fa-solid fa-cloud-bolt"></i>`;
+                all.classList.add("cloud-bolt")
+                all.classList.remove("sun")
+                all.classList.remove("snowflake")
+                all.classList.remove("smog")
+                all.classList.remove("cloud")
+                all.classList.remove("rain")
             } else if (data.weather[0].id >= 600 && data.weather[0].id <= 622) {
                 icon.innerHTML = `<i class="fa-solid fa-snowflake"></i>`;
                 icon1.innerHTML = `<i class="fa-solid fa-snowflake"></i>`;
                 icon2.innerHTML = `<i class="fa-solid fa-snowflake"></i>`;
+                all.classList.add("snowflake")
+                all.classList.remove("cloud-bolt")
+                all.classList.remove("sun")
+                all.classList.remove("smog")
+                all.classList.remove("cloud")
+                all.classList.remove("rain")
             } else if (data.weather[0].id >= 701 && data.weather[0].id <= 781) {
                 icon.innerHTML = `<i class="fa-solid fa-smog"></i>`;
                 icon1.innerHTML = `<i class="fa-solid fa-smog"></i>`;
                 icon2.innerHTML = `<i class="fa-solid fa-smog"></i>`;
+                all.classList.add("smog")
+                all.classList.remove("cloud-bolt")
+                all.classList.remove("sun")
+                all.classList.remove("snowflake")
+                all.classList.remove("cloud")
+                all.classList.remove("rain")
+
             } else if (data.weather[0].id >= 801 && data.weather[0].id <= 804) {
                 icon.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
                 icon1.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
                 icon2.innerHTML = `<i class="fa-solid fa-cloud"></i>`;
+                all.classList.add("cloud")
+                all.classList.remove("cloud-bolt")
+                all.classList.remove("sun")
+                all.classList.remove("snowflake")
+                all.classList.remove("smog")
+                all.classList.remove("rain")
             } else if ((data.weather[0].id >= 500 && data.weather[0].id <= 531) || (data.weather[0].id >= 300 && data.weather[0].id <= 321)) {
                 icon.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`;
                 icon1.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`;
                 icon2.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`;
+                all.classList.add("rain")
+                all.classList.remove("cloud-bolt")
+                all.classList.remove("sun")
+                all.classList.remove("snowflake")
+                all.classList.remove("smog")
+                all.classList.remove("cloud")
             }
 
             search.value = ""

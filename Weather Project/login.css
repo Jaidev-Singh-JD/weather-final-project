@@ -7,8 +7,8 @@
     font-family: 'Poppins';
 }
 body{
-    background-image:linear-gradient(rgba(255, 239, 199, 0.921),rgba(0, 0, 0, 0.6)),url(background.jpg);
-    background-size: 1370px 900px;
+    background-image:url(background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #navbar {
@@ -16,10 +16,11 @@ body{
     width: 100%;
     border: 1px rgba(255, 239, 199, 0.921) solid;
     box-shadow: 0px 0px 5px 3px;
+    background-color: #333;
 }
 
 label.heading {
-    color:black;
+    color:#fff;
     font-size: 45px;
     line-height: 75px;
     padding: 0 70px;
