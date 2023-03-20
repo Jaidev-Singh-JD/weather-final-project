@@ -278,3 +278,29 @@ h2 span {
     flex-direction: column;
     background: rgb(51,51,51,0.7);
 }
+
+#footer{
+    background: rgb(51,51,51,0.9);
+    padding: 15px;
+    margin-top: 40px;
+
+}
+.footer-copyright{
+    text-align: center;
+    color: #fff;
+}
+.footer-icon{
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+    gap: 20px;
+    cursor:pointer;
+    padding:0px 60px;
+    margin-bottom: 20px;
+}
+.fa-brands:hover{
+    -webkit-text-fill-color: #f59709;  
+}
+.fa-brands{
+    -webkit-text-fill-color: #fff;
+}
