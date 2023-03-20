@@ -9,8 +9,8 @@
 }
 
 body {
-    background-image:url(background.jpg);
-    background-size:cover;
+    background-image: url(background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -38,7 +38,7 @@ label.heading {
 #navcontent {
     float: right;
     margin: right;
-    display:flex;
+    display: flex;
 }
 
 .navicon {
@@ -94,7 +94,7 @@ label.heading {
     width: 400px;
     height: 40px;
     background: #fff;
-    margin: 15px 10px ;
+    margin: 15px 10px;
     padding: -30px 5px;
     border-radius: 5px;
     box-shadow: 0px 1px 5px 1px;
@@ -146,7 +146,7 @@ button .fa-solid {
 
 .suggestion-box ul li:hover {
     background: #fff;
-    -webkit-text-fill-color:#f59709;
+    -webkit-text-fill-color: #f59709;
 }
 
 .suggestion-box {
@@ -223,12 +223,14 @@ button .fa-solid {
     margin-top: -120px;
     text-shadow: 0pc 1pc 1pc;
 }
+
 #weathercondition {
     font-size: 20px;
     float: left;
     margin-top: -60px;
     text-shadow: 0pc 1pc 1pc;
 }
+
 #country {
     font-size: 20px;
     float: left;
@@ -236,6 +238,7 @@ button .fa-solid {
     text-shadow: 0pc 1pc 1pc;
 
 }
+
 #feels_like {
     font-size: 20px;
     float: left;
@@ -243,34 +246,316 @@ button .fa-solid {
     text-shadow: 0pc 1pc 1pc;
 
 }
+
 #humidity {
     font-size: 20px;
     float: left;
-    margin-top:0px;
+    margin-top: 0px;
     text-shadow: 0pc 1pc 1pc;
 }
-#footer{
-    background: rgb(51,51,51,0.9);
+
+#footer {
+    background: rgb(51, 51, 51, 0.9);
     padding: 15px;
     margin-top: 40px;
 
 }
-.footer-copyright{
+
+.footer-copyright {
     text-align: center;
     color: #fff;
 }
-.footer-icon{
+
+.footer-icon {
     display: flex;
     font-size: 28px;
     justify-content: center;
     gap: 20px;
-    cursor:pointer;
-    padding:0px 60px;
+    cursor: pointer;
+    padding: 0px 60px;
     margin-bottom: 20px;
 }
-.fa-brands:hover{
-    -webkit-text-fill-color: #f59709;  
+
+.fa-brands:hover {
+    -webkit-text-fill-color: #f59709;
 }
-.fa-brands{
+
+.fa-brands {
     -webkit-text-fill-color: #fff;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 990px) {
+    label.heading {
+        font-size: 25px;
+        padding: 0px 10px;
+    }
+
+    .search-box {
+        width: 250px;
+        height: 30px;
+        margin: 18px 2px;
+    }
+
+    .navicon {
+        font-size: 19px;
+        gap: 5px;
+    }
+
+    #search {
+        font-size: 10px;
+        padding: 0px;
+        margin-bottom: 4px;
+    }
+
+    .suggestion-box {
+        max-height: 75px;
+        font-size: 10px;
+    }
+
+    .suggestion-box ul li {
+        padding: 5px 5px;
+    }
+
+    .tooltiptext {
+        padding: 5px 4px;
+        font-size: 4px;
+    }
+}
+
+
+
+@media screen and (max-width: 595px) {
+
+    #img {
+        font-size: 100px;
+        margin-right: 10px;
+    }
+
+    #temp {
+        font-size: 70px;
+        margin-top: -50px;
+
+    }
+
+
+    #city {
+        font-size: 15px;
+        margin-top:-100px;
+    }
+
+    #weathercondition {
+        font-size: 15px;
+        margin-top: -50px;
+    }
+
+    #country {
+        font-size: 15px;
+        margin-top: -75px;
+
+    }
+
+    #feels_like {
+        font-size: 15px;
+        margin-top: -25px;
+
+    }
+
+    #humidity {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .container{
+        height: 250px;
+    }
+    .footer-icon{
+        font-size: 15px;
+    }
+    .footer-copyright{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    label.heading {
+        font-size: 23px;
+        padding: 0px 2px;
+    }
+
+    .search-box {
+        width: 190px;
+        height: 30px;
+        margin: 18px 2px;
+        
+    }
+
+    .navicon {
+        font-size: 15px;
+        gap: 5px;
+        margin-top: 25px;
+    }
+    #navbar{
+        height: 70px;
+    }
+
+    #search {
+        font-size: 10px;
+        padding: 0px;
+        margin:0px 5px;
+    }
+
+    .suggestion-box {
+        max-height: 75px;
+        font-size: 10px;
+    }
+
+    .suggestion-box ul li {
+        padding: 5px 5px;
+    }
+
+    .tooltiptext {
+        padding: 5px 4px;
+        font-size: 4px;
+    }
+}
+
+@media screen and (max-width: 447px) {
+    label.heading {
+        font-size: 23px;
+        padding: 0px 2px;
+    }
+
+    .search-box {
+        width: 170px;
+        height: 30px;
+        margin: 25px 1px;
+        
+    }
+
+    .navicon {
+        font-size: 15px;
+        gap: 5px;
+        margin-top: 25px;
+    }
+    #navbar{
+        height: 70px;
+    }
+
+    #search {
+        font-size: 10px;
+        padding: 2px;
+        margin:0px -5px;
+    }
+
+    .suggestion-box {
+        max-height: 75px;
+        font-size: 10px;
+    }
+
+    .suggestion-box ul li {
+        padding: 5px 5px;
+    }
+
+    .tooltiptext {
+        padding: 5px 4px;
+        font-size: 4px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    label.heading {
+        font-size: 23px;
+        padding: 0px 2px;
+    }
+
+    .search-box {
+        width: 170px;
+        height: 30px;
+        margin: 1px 1px;
+        
+    }
+
+    .navicon {
+        font-size: 15px;
+        gap: 5px;
+        margin-top: 1px;
+    }
+    #navbar{
+        height: 120px;
+    }
+
+    #search {
+        font-size: 10px;
+        padding: 2px;
+        margin:0px -5px;
+    }
+
+    .suggestion-box {
+        max-height: 75px;
+        font-size: 10px;
+    }
+
+    .suggestion-box ul li {
+        padding: 5px 5px;
+    }
+
+    .tooltiptext {
+        padding: 5px 4px;
+        font-size: 4px;
+    }
+
+
+
+
+
+    #img {
+        font-size: 70px;
+        margin-right: 10px;
+    }
+
+    #temp {
+        font-size: 40px;
+        margin-top: -50px;
+
+    }
+
+
+    #city {
+        font-size: 10px;
+        margin-top:-85px;
+    }
+
+    #weathercondition {
+        font-size: 10px;
+        margin-top: -45px;
+    }
+
+    #country {
+        font-size: 10px;
+        margin-top: -65px;
+
+    }
+
+    #feels_like {
+        font-size: 10px;
+        margin-top: -25px;
+
+    }
+
+    #humidity {
+        font-size: 10px;
+        margin-top: -5px;
+    }
+    .container{
+        height: 250px;
+    }
+    .footer-icon{
+        font-size: 15px;
+    }
+    .footer-copyright{
+        font-size: 10px;
+    }
 }
