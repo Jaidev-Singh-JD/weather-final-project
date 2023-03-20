@@ -1,5 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error)
+    }
+    else {
+        alert("Your System Does Not Support Geolocation API")
+    }
+
     let login = document.getElementById("login")
     login.addEventListener("click", () => {
         window.location = "login.html"
@@ -24,14 +31,6 @@ window.addEventListener("DOMContentLoaded", () => {
     let api;
 
 
-    // // for search bar dynamics
-   
-    // search.classList.add("inv")
-
-    // let mag = document.getElementById("mag")
-    // mag.addEventListener("click", () => {
-    //     search.classList.remove("inv")
-    // })
 
 
 

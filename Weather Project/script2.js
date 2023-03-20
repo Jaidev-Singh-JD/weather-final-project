@@ -1,5 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error)
+    }
+    else {
+        alert("Your System Does Not Support Geolocation API")
+    }
+
     let logout = document.getElementById("logout")
     logout.addEventListener("click", () => {
 
@@ -83,16 +90,6 @@ window.addEventListener("DOMContentLoaded", () => {
     let api1;
     let all = document.getElementById("all")
 
-
-
-
-    // // for search bar dynamics
-    // let search = document.getElementById("search")
-    // search.classList.add("inv")
-    // let mag = document.getElementById("mag")
-    // mag.addEventListener("click", () => {
-    //     search.classList.remove("inv")
-    // })
 
 
 
@@ -528,10 +525,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
         }
     }
-
-
-
-
 
 
 
