@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+    console.log("Weather App By Amit and Jaidev")
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(success, error)
@@ -90,7 +91,10 @@ window.addEventListener("DOMContentLoaded", () => {
     function fetchApi() {
         infoText.innerHTML = "Getting Details"
 
-        fetch(api).then(response => response.json()).then(data => weatherData(data)).catch(() => {
+        fetch(api)
+        .then(response => response.json())
+        .then(data => weatherData(data))
+        .catch(() => {
             infoText.innerHTML = "Some Error Occured";
         });
     }

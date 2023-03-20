@@ -18,7 +18,8 @@ class Logic {
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    console.log("loaded")
+    console.log("Weather App By Amit and Jaidev")
+    // console.log("loaded")
     let logic = new Logic()
 
 
@@ -73,17 +74,17 @@ window.addEventListener("DOMContentLoaded", () => {
     lbtnsignup.addEventListener("click", () => {
         let usersignup = document.getElementById("usersignup").value
         let passwordsignup = document.getElementById("passwordsignup").value
-        if (usersignup !== "" && passwordsignup !== "") {
+        if (usersignup != "" && passwordsignup != "") {
             document.getElementById('user').value = ""
             document.getElementById('password').value = ""
             document.getElementById('content').innerHTML = ""
             localStorage.setItem("userid", usersignup)
             localStorage.setItem("userpassword", passwordsignup)
-            let userid = localStorage.getItem("userid")
-            let userpassword = localStorage.getItem("userpassword")
-            console.log(userid)
-            console.log(userpassword)
-            document.getElementById('content').innerHTML = ""
+            // let userid = localStorage.getItem("userid")
+            // let userpassword = localStorage.getItem("userpassword")
+            // console.log(userid)
+            // console.log(userpassword)
+            // document.getElementById('content').innerHTML = ""
             signuppage.classList.add("inv")
             loginpage.classList.remove("inv")
 

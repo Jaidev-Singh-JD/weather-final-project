@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-
+    console.log("Weather App By Amit and Jaidev")
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(success, error)
     }
@@ -88,6 +88,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let api;
     let api1;
+
     let all = document.getElementById("all")
 
 
@@ -276,7 +277,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     function fetchData() {
-        fetch(api1).then(response => response.json()).then(data1 => weatherData1(data1)).catch(() => {
+        fetch(api1)
+        .then(response => response.json())
+        .then(data1 => weatherData1(data1))
+        .catch(() => {
             console.log("Error occured")
 
         });
@@ -293,7 +297,7 @@ window.addEventListener("DOMContentLoaded", () => {
             console.log(data1)
 
 
-            // daily forcast
+            // daily forecast
             temp3.innerHTML = `${Math.floor(data1.list[8].main.temp)} &#8451`
             weathercondition3.innerHTML = data1.list[8].weather[0].description
 
@@ -387,7 +391,9 @@ window.addEventListener("DOMContentLoaded", () => {
             }
 
             let time3 = new Date(data1.list[8].dt * 1000)
+            // console.log(time3)
             let day3 = time3.toDateString().split(" ")[0]
+            // console.log(day3)
 
             let time4 = new Date(data1.list[16].dt * 1000)
             let day4 = time4.toDateString().split(" ")[0]
@@ -501,19 +507,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
             let hour1 = data1.list[0].dt_txt
-            let hourt1 = hour1.toString().split(" ")[1]
+            // console.log(hour1)
+            let hourt1 = hour1.split(" ")[1]
+            // console.log(hourt1)
 
             let hour2 = data1.list[1].dt_txt
-            let hourt2 = hour2.toString().split(" ")[1]
+            let hourt2 = hour2.split(" ")[1]
 
             let hour3 = data1.list[2].dt_txt
-            let hourt3 = hour3.toString().split(" ")[1]
+            let hourt3 = hour3.split(" ")[1]
 
             let hour4 = data1.list[3].dt_txt
-            let hourt4 = hour4.toString().split(" ")[1]
+            let hourt4 = hour4.split(" ")[1]
 
             let hour5 = data1.list[4].dt_txt
-            let hourt5 = hour5.toString().split(" ")[1]
+            let hourt5 = hour5.split(" ")[1]
 
             document.getElementById("hour1").innerHTML = hourt1
             document.getElementById("hour2").innerHTML = hourt2
@@ -528,4 +536,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-})
+});

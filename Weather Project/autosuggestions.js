@@ -1,19 +1,19 @@
 let suggestedkeywords=[
-    'Delhi',
-    'Kolkata',
-    'Mumbai',
-    'Tokyo',
-    'Beijing',
-    'Bangalore',
-    'Dubai',
-    'Denver',
-    'Darjeeling',
-    'Doha',
-    'Denmark',
-    'Mawsynram',
-    'Russia',
-    'leh',
-    'pune'
+    'Delhi','Iran','Coimbatore','Madurai','Thiruvananthapuram',
+    'Kolkata','Nepal','Mysuru','Puducherry','Salem',
+    'Mumbai','Sri lanka','Kochi','Tirunelveli','Warangal',
+    'Tokyo','Bangladesh','Jabalpur','Ooty',
+    'Beijing','Hong kong','Bhopal',
+    'Bangalore','Amstelveen','Patna',
+    'Dubai','Chennai','Mangalore',
+    'Denver','Chicago','Agra',
+    'Darjeeling','Copenhagen','Kashmir',
+    'Doha','Düsseldorf','Goa',
+    'Denmark','Germany','Sydney',
+    'Mawsynram','Gurgaon','New york',
+    'Russia','Helsinki','Shanghai',
+    'leh','Hyderabad','Los Angeles',
+    'pune','London','Singapore'
 
 ];
 

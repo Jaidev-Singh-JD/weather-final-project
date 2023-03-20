@@ -108,6 +108,10 @@ input {
     background-color: #ffffff;
     -webkit-text-fill-color: #f59709;
 }
+#lbtnsignup:hover {
+    background-color: #ffffff;
+    -webkit-text-fill-color: #f59709;
+}
 
 #signuphere:hover {
     color: #f59709;
