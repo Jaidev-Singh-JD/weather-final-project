@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stick+No+Bills:wght@800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
 }
-body{
-    background-image:url(background.jpg);
+
+body {
+    background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 #navbar {
     height: 70px;
     width: 100%;
@@ -20,7 +23,7 @@ body{
 }
 
 label.heading {
-    color:#fff;
+    color: #fff;
     font-size: 45px;
     line-height: 75px;
     padding: 0 70px;
@@ -28,14 +31,16 @@ label.heading {
     font-family: 'Stick No Bills', sans-serif;
 }
 
-.fa-solid{
+.fa-solid {
     color: #f59709;
 }
+
 input {
     font-size: 15px;
 }
 
-#content,#contents {
+#content,
+#contents {
     color: red;
 }
 
@@ -43,6 +48,7 @@ input {
     display: none;
     visibility: hidden;
 }
+
 .container {
     display: grid;
     border: 2px solid black;
@@ -53,71 +59,136 @@ input {
     text-align: center;
     margin: 70px auto;
     padding: 15px;
-    box-shadow: 0px 1px 5px 3px ;
+    box-shadow: 0px 1px 5px 3px;
 }
+
 .input-row1,
-.input-row2{
+.input-row2 {
     border: 2px solid;
     width: 350px;
     height: 40px;
     background-color: #ffffff;
-    margin: 20px 10px ;
+    margin: 20px 10px;
     border-radius: 5px;
     box-shadow: 0px 1px 5px 1px;
-    
+
 }
+
 #user,
-#password{
-    
+#password {
+
     border: none;
     outline: none;
     font-weight: bold;
 }
+
 .fa-user,
-.fa-lock{
-    margin-right:100px;
+.fa-lock {
+    margin-right: 100px;
     margin-top: 10px;
 }
+
 #lbtn,
 #lbtnsignup {
     border: 2px solid;
     width: 350px;
     height: 40px;
-    background-color:#f59709;
+    background-color: #f59709;
     border: 2px solid black;
     cursor: pointer;
     font-size: 18px;
     -webkit-text-fill-color: #ffffff;
-    margin: 20px 10px ;
+    margin: 20px 10px;
     border-radius: 5px;
     box-shadow: 0px 1px 5px 1px;
 
 }
 
 #lbtn:hover {
-    background-color:#ffffff;
+    background-color: #ffffff;
     -webkit-text-fill-color: #f59709;
 }
-#signuphere:hover{
+
+#signuphere:hover {
     color: #f59709;
 }
-#signuphere{
+
+#signuphere {
     text-decoration: underline;
     cursor: pointer;
     color: #ffffff;
 }
 
 #passwordsignup,
-#usersignup{
+#usersignup {
     border: none;
     outline: none;
     font-weight: bold;
 }
-#backtologin:hover{
+
+#backtologin:hover {
     color: #f59709;
     cursor: pointer;
 }
-#backtologin{
+
+#backtologin {
     color: #ffffff;
     text-decoration: underline;
+}
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 429px) {
+    .container {
+        width: 200px;
+        height: 280px;
+        align-items: center;
+        margin: 90px auto;
+        padding: 15px ;
+    }
+
+    .input-row1,
+    .input-row2 {
+        width: 150px;
+        height: 20px;
+        margin: 5px 10px;
+        font-size: 10px;
+
+    }
+
+    input {
+        font-size: 10px;
+    }
+
+    label.heading {
+        font-size: 30px;
+        padding: 0px 10px;
+    }
+
+    .fa-lock,
+    .fa-user {
+        display: none;
+    }
+
+    #lbtn,
+    #lbtnsignup {
+        width: 150px;
+        height: 25px;
+        font-size: 10px;
+        margin: 5px 10px;
+
+    }
+    h2{
+        font-size: small;
+    }
+    #signuphere,
+    #content,
+    #backtologin,
+    #contents{
+        font-size: 8px;
+    }
+
 }
