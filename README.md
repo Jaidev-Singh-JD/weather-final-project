@@ -15,7 +15,7 @@ This helps the user find the location they are looking for faster and easier.
 
 <li><b>5-day weather forecast</b></li>This feature displays the weather forecast for the next 5 days. This allows the user to plan ahead and be prepared for any weather conditions.
 
-<li><b>Login and Signup system</b></li>This feature allows the user to create an account and save their favorite locations. This is done using local storage,
+<li><b>Login and Signup system</b></li>This feature allows the user to create an account and login to use other features. This is done using local storage,
 so the user's data is stored on their device and is not sent to any server.
 
 <li><b>Temperature in three Formats</b></li>This feature allows the user to see the temperature in three formats-Kelvin,Celcius,Fahrenheit.
