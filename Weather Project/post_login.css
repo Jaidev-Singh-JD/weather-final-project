@@ -80,7 +80,7 @@ label.heading {
     transition: all .9s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
 #all1 > .container1:hover{
-    flex: 3;
+    flex: 5;
 }
 
 .search-box {
