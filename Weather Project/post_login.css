@@ -74,6 +74,15 @@ label.heading {
     visibility: visible;
 }
 
+
+#all>.container{
+    flex:1;
+    transition: all .9s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+#all > .container:hover{
+    flex: 3;
+}
+
 .search-box {
     width: 400px;
     height: 40px;
