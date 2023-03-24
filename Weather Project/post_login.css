@@ -532,6 +532,16 @@ h2 span {
         font-size: 8px;
 
     }
+      #all1 {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .container1 {
+        margin: 10px 20px;
+        padding: 5px 16px;
+    }
 }
 
 @media screen and (max-width: 322px) {
