@@ -42,7 +42,7 @@ This project was built using the following technologies:
 <h4>The Font is provided by the <i>Google Font API</i></h4>
 <h4>The Icons are taken from the <i>font-Awesome CDN</i></h4><hr>
 
-<h3>Screenshots<hr>
+<h3>Screenshots<h3>
 
 ![index_html](https://user-images.githubusercontent.com/120723984/226450879-aa077ce2-beca-4c2c-9497-ab09cd798344.jpg)
 
@@ -51,5 +51,9 @@ This project was built using the following technologies:
 
 ![feature_page](https://user-images.githubusercontent.com/120723984/226450936-43dd7dbb-a190-40a3-8327-0d8d37b2b8d6.png)
 
-
+<h1> Updated CSS   24-03-2023 </h1>
+<h3><ul>
+<li>Added a crousel when you use this website in phone like devices for -Iphone SE , Samsung S8+ (max-width-378px).</li>
+<li>Added a transition with using Easing function (cubic beizer)</li>
+</ul></h3>
 <-----Project made for Annalect India -By Jaidev Singh  And Amit Soni----->
