@@ -54,6 +54,6 @@ This project was built using the following technologies:
 <h1> Updated CSS   24-03-2023 </h1>
 <h3><ul>
 <li>Added a crousel when you use this website in phone like devices for -Iphone SE , Samsung S8+ (max-width-378px).</li>
-<li>Added a transition with using Easing function (cubic beizer)</li>
+<li>Added a transition with using Easing function (cubic bezier)</li>
 </ul></h3>
 <-----Project made for Annalect India -By Jaidev Singh  And Amit Soni----->
