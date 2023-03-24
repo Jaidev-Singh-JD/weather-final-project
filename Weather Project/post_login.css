@@ -75,12 +75,12 @@ label.heading {
 }
 
 
-#all1>.container1{
+#all>.container{
     flex:1;
     transition: all .9s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
-#all1 > .container1:hover{
-    flex: 5;
+#all > .container:hover{
+    flex: 3;
 }
 
 .search-box {
