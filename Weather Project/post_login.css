@@ -75,11 +75,11 @@ label.heading {
 }
 
 
-#all>.container{
+#all1>.container1{
     flex:1;
     transition: all .9s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
-#all > .container:hover{
+#all1 > .container1:hover{
     flex: 3;
 }
 
