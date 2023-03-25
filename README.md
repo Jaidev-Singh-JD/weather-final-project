@@ -54,8 +54,8 @@ This project was built using the following technologies:
 <h1> Updated CSS   24-03-2023 </h1>
 <h3><ul>
 <li>Added a crousel when you use this website in phone like devices for -Iphone SE , Samsung S8+ (max-width-378px). in post login</li>
-<li>Added a transition with using Easing function (cubic bezier) in post login page</li>
+<li>Added a transition with using Easing function (cubic bezier) in post login page</li></ul>
 <h1> Updated JS   25-03-2023 </h1>
-<li>Added a debounce function which fetch API after one second of any input triggered (updated the autosuggestion.js file) </li>
+<ul><li>Added a debounce function which fetch API after one second of any input triggered (updated the autosuggestion.js file) </li>
 </ul></h3>
 <-----Project made for Annalect India -By Jaidev Singh  And Amit Soni----->
