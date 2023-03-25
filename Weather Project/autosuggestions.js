@@ -1,4 +1,4 @@
-let suggestedkeywords=[
+/* let suggestedkeywords=[
     'Delhi','Iran','Coimbatore','Madurai','Thiruvananthapuram','Shimla',
     'Kolkata','Nepal','Mysuru','Puducherry','Salem','Greater Noida',
     'Mumbai','Sri lanka','Kochi','Tirunelveli','Warangal','Uttar Pradesh',
@@ -44,3 +44,53 @@ function selectInput(list){
     inputBox.value=list.innerHTML;
     suggestionBox.innerHTML='';
 }
+*/
+
+const debounce = (func, delay) => {
+    let timer;
+    return function () {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            func();
+        }, delay);
+    };
+};
+
+const searchInput = document.querySelector("#search");
+const suggestionsList = document.querySelector(".suggestion-box");
+
+
+const showSuggestions = (input) => {
+    const url = `https://api.openweathermap.org/data/2.5/find?q=${input}&type=like&sort=population&cnt=5&appid=23f88dd19a408b48dc54ac3d48402709`; 
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            // console.log(data.list)
+            const matchingCities = data.list.map(city => city.name); 
+            // console.log(matchingCities)
+            const html = matchingCities.map(city => `<li onclick=selectInput(this)>${city}</li>`);
+            // console.log(html)
+            suggestionsList.innerHTML = "<ul>" + html.join('') + "</ul>";
+        })
+        .catch(error => console.error(error));
+};
+
+
+const handleInput = () => {
+        const input = searchInput.value;
+        if (input === "") {
+                suggestionsList.innerHTML = "";
+    } else {
+            showSuggestions(input);
+        }
+};
+
+const debounceInput = debounce(handleInput, 1000);
+
+searchInput.addEventListener("input", debounceInput);
+
+function selectInput(list) {
+        searchInput.value = list.innerHTML;
+        suggestionsList.innerHTML = '';
+    }
+    
