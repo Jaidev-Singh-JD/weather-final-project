@@ -58,4 +58,4 @@ This project was built using the following technologies:
 <h1> Updated JS   25-03-2023 </h1>
 <ul><li><h3>Added a debounce function which fetch API after one second of any input triggered (updated the autosuggestion.js file) </li>
 </ul></h3>
-<h2><i><-----Project made for Annalect India -By Jaidev Singh  And Amit Soni-----></i></h2>
+
