@@ -1,46 +1,55 @@
-<h1>Weather App Project</h1>
+# Weather App Project
 
-This project is a web-based weather application that displays real-time weather information for any city around the world.
-The application is built using HTML, CSS, and JavaScript and is designed to be responsive on any device.
-The app has a suggestion search box, a geolocation feature, and it displays hourly weather data and a 5-day weather forecast.<hr>
+A web-based weather application that displays **real-time weather information** for any city around the world.  
+The application is built using **HTML, CSS, and JavaScript** and is designed to be **responsive** on any device.  
 
-<h3>Features</h3>
-<ol>
-<li><b>Suggestion search box</b></li>This feature allows the user to type in a location and get suggestions based on the input.
-This helps the user find the location they are looking for faster and easier.
+The app includes a suggestion search box, geolocation feature, hourly weather data, and a 5-day weather forecast.
 
-<li><b>Geolocation feature</b></li>This feature uses the user's device GPS to automatically detect the user's location and display the weather information for that location.
 
-<li><b>Hourly weather data</b></li>This feature displays hourly weather data for the current day. This allows the user to see how the weather will change throughout the day.
+## Features
 
-<li><b>5-day weather forecast</b></li>This feature displays the weather forecast for the next 5 days. This allows the user to plan ahead and be prepared for any weather conditions.
+- **Suggestion Search Box**  
+  Type in a location and get location suggestions for faster and easier searches.  
 
-<li><b>Login and Signup system</b></li>This feature allows the user to create an account and login to use other features. This is done using local storage,
-so the user's data is stored on their device and is not sent to any server.
+- **Geolocation Feature**  
+  Uses the device GPS to automatically detect and display weather information for the user's location.  
 
-<li><b>Temperature in three Formats</b></li>This feature allows the user to see the temperature in three formats-Kelvin,Celcius,Fahrenheit.
+- **Hourly Weather Data**  
+  View hourly weather updates for the current day.  
 
-<li><b>Responsiveness</b></li>This feature allows the user to use the website on any device,all content will be visible even when you minimize the tab.
+- **5-Day Weather Forecast**  
+  Displays weather predictions for the next 5 days to help plan ahead.  
 
-<hr><h3>Installation</h3>
-To use the Weather App Project,Follow these steps:
-<ul>
-<li>Clone the repository or download the zip file.</li>
-<li>Open the index.html file in your web browser.</li>
-<li>Allow the app to access your location, or search for a location using the suggestion search box.</li>
-<li>Login with existing Account Or Sign up with new Account for other Features like- Hourly Data ,5-Day Forecast, Temperature in Kelvin & Fahrenheit</li>
-</ul><hr>
-<h3>Credits</h3>
-This project was built using the following technologies:
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-</ul><hr>
+- **Login and Signup System**  
+  Create an account and log in to access features like hourly data, 5-day forecast, and temperature formats.  
+  (Implemented using **Local Storage** – data is stored on the user's device only.)  
 
-<h4>The weather data is provided by the <i>OpenWeatherMap API.</i></h4>
-<h4>The Font is provided by the <i>Google Font API</i></h4>
-<h4>The Icons are taken from the <i>font-Awesome CDN</i></h4><hr>
+- **Temperature in Three Formats**  
+  Switch between **Kelvin, Celsius, and Fahrenheit**.  
+
+- **Responsive Design**  
+  Works seamlessly on desktop, tablet, and mobile.  
+
+## Installation
+
+1. Clone the repository or download the ZIP file.  
+2. Open the `index.html` file in your web browser.  
+3. Allow location access **or** search for a city using the suggestion search box.  
+4. Log in with an existing account or sign up for a new one to unlock extra features.  
+
+## Credits
+
+- **Weather Data** – [OpenWeatherMap API](https://openweathermap.org/api)  
+- **Fonts** – [Google Fonts](https://fonts.google.com/)  
+- **Icons** – [Font Awesome](https://fontawesome.com/)  
+- **Technologies Used** – HTML, CSS, JavaScript  
+
+
+
+## Notes
+- This is just a **playground project** built for learning and experimentation.  
+- It is **not production-ready**.  
+
 
 <h3>Screenshots<h3>
 
@@ -51,11 +60,4 @@ This project was built using the following technologies:
 
 ![feature_page](https://user-images.githubusercontent.com/120723984/226450936-43dd7dbb-a190-40a3-8327-0d8d37b2b8d6.png)
 
-<h1> Updated CSS   24-03-2023 </h1>
-<h3><ul>
-<li>Added a crousel when you use this website in phone like devices for -Iphone SE , Samsung S8+ (max-width-378px). in post login</li>
-<li>Added a transition with using Easing function (cubic bezier) in post login page</li></ul>
-<h1> Updated JS   25-03-2023 </h1>
-<ul><li><h3>Added a debounce function which fetch API after one second of any input triggered (updated the autosuggestion.js file) </li>
-</ul></h3>
 
